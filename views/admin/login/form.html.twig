@@ -1,0 +1,16 @@
+{% extends 'admin/login/layout.html.twig' %}
+
+{% block form %}
+      <form action="{{ path('admin_login_check') }}" class="form-signin" role="form" method="post">
+        <h2 class="form-signin-heading">{{ 'views.admin.login.form.heading'|trans }}</h2>
+        {% if error %}
+          <div class="alert alert-danger">{{ 'views.admin.login.form.errors.invalid'|trans }}</div>
+        {% endif %}
+        <input type="text" class="form-control" placeholder="{{ 'views.admin.login.form.username.placeholder'|trans }}" name="_username" value="{{ last_username }}" required autofocus>
+        <input type="password" class="form-control" placeholder="{{ 'views.admin.login.form.password.placeholder'|trans }}" name="_password" value="" required>
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me" name="_remember_me"> {{ 'views.admin.login.form.remember_me.caption'|trans }}
+        </label>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">{{ 'views.admin.login.form.button.submit'|trans }}</button>
+      </form>
+{% endblock %}

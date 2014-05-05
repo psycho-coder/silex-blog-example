@@ -1,0 +1,107 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    padding-top: 50px;
+}
+
+.container {
+    max-width: 1024px;
+}
+
+.list-actions {
+    white-space: nowrap;
+}
+
+/**
+ * ***************************
+ * Form elements
+ * ***************************
+ */
+
+form .alert > ul {
+    padding: 0;
+    list-style: none;
+}
+
+textarea {
+    /* prevent from stretching beyond parent */
+    max-width: 100%;
+    resize: vertical;
+} 
+
+form .help-block {
+    font-size: smaller;
+}
+
+.tab-content {
+    padding: 10px;
+    border-left: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.md-preview {
+    padding: 10px 10px 0 10px;
+}
+
+.md-loader {
+    padding-bottom: 10px;
+}
+
+/**
+ * ***************************
+ * Page header and controls
+ * ***************************
+ */
+
+.page-header {
+    overflow: hidden;
+}
+
+.page-header > h1 {
+    float: left;
+    margin-right: 25px;
+}
+
+.page-header > .controls {
+    float: left;
+    margin-top: 22px;
+}
+
+/**
+ * ***************************
+ * Content styles
+ * ***************************
+ */
+pre {
+  border: 0;
+  padding: 5px;
+}
+
+/**
+ * ***************************
+ * Footer
+ * ***************************
+ */
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    padding-bottom: 70px;
+}
+
+footer {
+    margin: -50px auto 0;
+    height: 50px;
+    position: relative;
+    width: 100%;
+}
+
+footer > .container {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    font-size: smaller;
+    color: #aaa;
+}

@@ -1,0 +1,78 @@
+{% form_theme form 'admin/form/fields.html.twig' %}
+
+{# we'll show flashes inside form element #}
+{% block flashes %}{% endblock %}
+
+{{ form_start(form, {'attr': {'role': 'form'}}) }}
+    {% include 'shared/flashes.html.twig' %}
+
+    {{ form_errors(form) }}
+
+    <div class="form-group">
+        {{ form_label(form.title) }}
+        {{ form_errors(form.title) }}
+        {{ form_widget(form.title, {'attr': {'class': 'form-control'}}) }}
+    </div>
+
+    <div class="form-group" id="md-editor">
+        {{ form_label(form.content) }}
+        {{ form_errors(form.content) }}
+
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#md-source" data-toggle="tab">{{ 'views._form.markdown_editor.buttons.source'|trans }}</a></li>
+            <li><a href="#md-preview" data-toggle="tab" class="loader">{{ 'views._form.markdown_editor.buttons.preview'|trans }}</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane active" id="md-source">
+                {{ form_widget(form.content, {'attr': {'class': 'form-control', 'rows': 10, 'data-preview-url': path('admin_markdown_preview') }}) }}
+            </div>
+            <div class="tab-pane md-preview" id="md-preview"></div>
+        </div>
+
+        <p class="help-block">
+            {{ 'views._form.help.about_markdown'|trans({'%link%': '<a href="http://michelf.ca/projects/php-markdown/extra/">Markdwon Extra</a>'})|raw }}
+        </p>
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.slug) }}
+        {{ form_errors(form.slug) }}
+        <div class="input-group">
+            <span class="input-group-addon">{{ app.request.schemeAndHttpHost }}/posts/</span>
+            {{ form_widget(form.slug, {'attr': {'class': 'form-control'}}) }}
+        </div>
+        <p class="help-block">{{ 'views._form.help.leave_it_blank_to_autofill'|trans }}</p>
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.created_at) }}
+        {{ form_errors(form.created_at) }}
+        <div class="input-group date">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-th"></i></span>
+          {{ form_widget(form.created_at, {'attr': {'class': 'form-control datepicker', 'placeholder': "now"|date("d.m.Y") }}) }}
+        </div>
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.meta_title) }}
+        {{ form_errors(form.meta_title) }}
+        {{ form_widget(form.meta_title, {'attr': {'class': 'form-control'}}) }}
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.meta_description) }}
+        {{ form_errors(form.meta_description) }}
+        {{ form_widget(form.meta_description, {'attr': {'class': 'form-control'}}) }}
+    </div>
+
+    <div class="form-group">
+        {{ form_label(form.meta_keywords) }}
+        {{ form_errors(form.meta_keywords) }}
+        {{ form_widget(form.meta_keywords, {'attr': {'class': 'form-control'}}) }}
+    </div>
+
+    <a href="{{ path('admin_post_index', {'page': app.session.post.page|default(1)}) }}" class="btn btn-default">{{ 'app._form.button.back_to_list'|trans }}</a>
+    {{ form_widget(form.save, {'attr': {'class': 'btn btn-primary'}}) }}
+    
+{{ form_end(form) }}

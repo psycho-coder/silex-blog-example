@@ -1,0 +1,47 @@
+{#
+# @param Number pages   Total number of pages
+# @param Number current Current page number
+# @param Number radius  Radius of "visible" pages near the current. Others just hiding in "..."
+# @param String path    Route name
+#}
+
+{% set radius = radius|default(2) %}
+{% set left   = current-radius %}
+{% set right  = current+radius %}
+
+{% if pages > 1 %}
+    <ul class="pagination">
+        {% if current > 1 %}
+            <li><a href="{{ path(path, {'page': current-1}) }}">&laquo;</a></li>
+        {% else %}
+            <li class="disabled"><span>&laquo;</span></li>
+        {% endif %}
+
+        {% for page in 1..pages %}
+            {% if page == 2 and left > 2 %}
+                <li class="disabled"><span>...</span></li>
+            {% endif %}
+            {% if page == pages and right < pages-1 %}
+                <li class="disabled"><span>...</span></li>
+            {% endif %}
+
+            {% if page == 1 or page == pages or page in left..right %}
+                {% if page == current %}
+                    <li class="active">
+                        <a href="{{ path(path, {'page': page}) }}">{{ page }}</a>
+                    </li>
+                {% else %}
+                    <li>
+                        <a href="{{ path(path, {'page': page}) }}">{{ page }}</a>
+                    </li>                   
+                {% endif %}     
+            {% endif %}
+        {% endfor %}
+
+        {% if current+1 <= pages %}
+            <li><a href="{{ path(path, {'page': current+1}) }}">&raquo;</a></li>
+        {% else %}
+            <li class="disabled"><span>&raquo;</span></li>
+        {% endif %}
+    </ul>
+{% endif %}

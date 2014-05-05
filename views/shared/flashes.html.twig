@@ -1,0 +1,15 @@
+{% set flashTypes = [
+    {'name': 'info',    'class': 'info'},
+    {'name': 'warning', 'class': 'warning'},
+    {'name': 'success', 'class': 'success'} ,
+    {'name': 'error',   'class': 'danger'}
+] %}
+
+{% for flashType in flashTypes %}
+    {% for message in app.session.getFlashBag.get(flashType.name) %}
+        <div class="alert alert-{{ flashType.class }}">
+            <button class="close" data-dismiss="alert">×</button>
+            {{ message|trans }}
+        </div>
+    {% endfor %}
+{% endfor %}

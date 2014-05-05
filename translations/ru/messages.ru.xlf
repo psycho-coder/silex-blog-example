@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file source-language="ru" datatype="plaintext" original="file.ext">
+    <body>
+      <trans-unit id="eff26e9424d57b2d61f24bdf3f94a27c" resname="views.admin.layout.page_title">
+        <source>views.admin.layout.page_title</source>
+        <target>Панель управления</target>
+      </trans-unit>
+      <trans-unit id="06eaada180fb1f33875cb02e83bf0a6d" resname="views.admin.layout.button.menu_open">
+        <source>views.admin.layout.button.menu_open</source>
+        <target>Раскрыть</target>
+      </trans-unit>
+      <trans-unit id="0846894577dbaf6195c169408bebf624" resname="views.admin.layout.brand">
+        <source>views.admin.layout.brand</source>
+        <target>Блог</target>
+      </trans-unit>
+      <trans-unit id="3f1d7cd975ce0abcc43183b9d7285828" resname="views.admin.layout.sign_out">
+        <source>views.admin.layout.sign_out</source>
+        <target>Выход</target>
+      </trans-unit>
+      <trans-unit id="94e09a1a4d1982a2142736af64a2af83" resname="views.admin.login.form.heading">
+        <source>views.admin.login.form.heading</source>
+        <target>Авторизация</target>
+      </trans-unit>
+      <trans-unit id="099597ec284f46662d47019a88040d28" resname="views.admin.login.form.errors.invalid">
+        <source>views.admin.login.form.errors.invalid</source>
+        <target>Неверный логин и/или пароль</target>
+      </trans-unit>
+      <trans-unit id="5c029e5231e7449aeb71099ca3b58ee9" resname="views.admin.login.form.username.placeholder">
+        <source>views.admin.login.form.username.placeholder</source>
+        <target>логин</target>
+      </trans-unit>
+      <trans-unit id="1aadf678e4e74af49576aac27097a882" resname="views.admin.login.form.password.placeholder">
+        <source>views.admin.login.form.password.placeholder</source>
+        <target>пароль</target>
+      </trans-unit>
+      <trans-unit id="eb45a7a9ee87ce697271581c110239a1" resname="views.admin.login.form.remember_me.caption">
+        <source>views.admin.login.form.remember_me.caption</source>
+        <target>Запомнить меня</target>
+      </trans-unit>
+      <trans-unit id="e358c04110d464255b3dc4d4be1298c4" resname="views.admin.login.form.button.submit">
+        <source>views.admin.login.form.button.submit</source>
+        <target>Войти</target>
+      </trans-unit>
+      <trans-unit id="d1269b87dd9d7fc2c34e47eae969d19d" resname="views.admin.post.edit.page_heading">
+        <source>views.admin.post.edit.page_heading</source>
+        <target>Редактирование записи</target>
+      </trans-unit>
+      <trans-unit id="76ee3910fe571479e682a76664b417f0" resname="views._form.markdown_editor.buttons.source">
+        <source>views._form.markdown_editor.buttons.source</source>
+        <target>Исходный текст</target>
+      </trans-unit>
+      <trans-unit id="bf69889bf4b54418e663a416877a6b34" resname="views._form.markdown_editor.buttons.preview">
+        <source>views._form.markdown_editor.buttons.preview</source>
+        <target>Просмотр</target>
+      </trans-unit>
+      <trans-unit id="2f97930e8a6a3d647246b353f68a094d" resname="views._form.help.about_markdown">
+        <source>views._form.help.about_markdown</source>
+        <target>Для обработки текста используется %link%</target>
+      </trans-unit>
+      <trans-unit id="294b4d5c125467cf7b335c8b8ce70d8a" resname="views._form.help.leave_it_blank_to_autofill">
+        <source>views._form.help.leave_it_blank_to_autofill</source>
+        <target>Оставьте поле пустым для автоматического заполнения</target>
+      </trans-unit>
+      <trans-unit id="4318bf971d546b2d1db05a04f71d94c7" resname="app._form.button.back_to_list">
+        <source>app._form.button.back_to_list</source>
+        <target>К списку</target>
+      </trans-unit>
+      <trans-unit id="5cdea9d6c29801b67ac93b16fa00b354" resname="views.admin.post.index.page_heading">
+        <source>views.admin.post.index.page_heading</source>
+        <target>Записи</target>
+      </trans-unit>
+      <trans-unit id="853072ade686d678b81f961c2045fe3f" resname="views.admin.post.index.button.create">
+        <source>views.admin.post.index.button.create</source>
+        <target>Создать</target>
+      </trans-unit>
+      <trans-unit id="c0543d6e7f22ed8d2e46db46553096e3" resname="views.admin.post.index.post.created_at">
+        <source>views.admin.post.index.post.created_at</source>
+        <target>Дата</target>
+      </trans-unit>
+      <trans-unit id="e3c28a6fab36b0e3c03de2e5a71fb1e7" resname="views.admin.post.index.post.title">
+        <source>views.admin.post.index.post.title</source>
+        <target>Заголовок</target>
+      </trans-unit>
+      <trans-unit id="1c88c3322e3857bbceb9d5e10de63cf2" resname="views.admin._list.button.edit">
+        <source>views.admin._list.button.edit</source>
+        <target>Изменить</target>
+      </trans-unit>
+      <trans-unit id="a2d99332bd321689f529d2b550da550b" resname="views.admin._list.button.delete_confirmation">
+        <source>views.admin._list.button.delete_confirmation</source>
+        <target>Вы уверены?</target>
+      </trans-unit>
+      <trans-unit id="a4d5618b869757d9da6e7e880c7f17d1" resname="views.admin._list.button.delete">
+        <source>views.admin._list.button.delete</source>
+        <target>Удалить</target>
+      </trans-unit>
+      <trans-unit id="48ed12af70aad15be75b89f9bf089166" resname="views.admin.post.new.page_heading">
+        <source>views.admin.post.new.page_heading</source>
+        <target>Новая запись</target>
+      </trans-unit>
+      <trans-unit id="8a8ae33385cede1a20c3fe93471a8c5e" resname="views.errors.404.message">
+        <source>views.errors.404.message</source>
+        <target>Страница не найдена</target>
+      </trans-unit>
+      <trans-unit id="f564e0000def41093a71bf9ccb75a145" resname="views.errors.4xx.message">
+        <source>views.errors.4xx.message</source>
+        <target>Ошибка клиента</target>
+      </trans-unit>
+      <trans-unit id="bbc9a0e59d6e0b242cb8467b98449e54" resname="views.errors.500.message">
+        <source>views.errors.500.message</source>
+        <target>Ошибка сервера</target>
+      </trans-unit>
+      <trans-unit id="58f848a00e82835835350cad91d248ec" resname="views.errors.5xx.message">
+        <source>views.errors.5xx.message</source>
+        <target>Ошибка сервера</target>
+      </trans-unit>
+      <trans-unit id="7a1ee6a684bd8b96be7c6f31f247f393" resname="views.errors.default.header">
+        <source>views.errors.default.header</source>
+        <target>Ошибка</target>
+      </trans-unit>
+      <trans-unit id="47decda823f1a217adb0d562711f2eed" resname="views.errors.default.message">
+        <source>views.errors.default.message</source>
+        <target>Неизвестная ошибка</target>
+      </trans-unit>
+      <trans-unit id="e536e76756ade5799a02ae22788540fa" resname="views.layout._menu.home">
+        <source>views.layout._menu.home</source>
+        <target>Блог</target>
+      </trans-unit>
+      <trans-unit id="c338e17f1abbbadb3e67410406a53959" resname="views.layout.powered_by">
+        <source>views.layout.powered_by</source>
+        <target>Powered by:</target>
+      </trans-unit>
+      <trans-unit id="9202a574455c5c74d22d99533e59477b" resname="views.layout.page_title">
+        <source>views.layout.page_title</source>
+        <target>Muspi Merol Blog</target>
+      </trans-unit>
+      <trans-unit id="898c627c3bba5e5ec822e13fc475dda5" resname="views.post.index.title">
+        <source>views.post.index.title</source>
+        <target>Lorem ipsum blog</target>
+      </trans-unit>
+      <trans-unit id="871bbd151a16a6d303b531afc6192484" resname="views.admin.layout.posts">
+        <source>views.admin.layout.posts</source>
+        <target>Записи</target>
+      </trans-unit>
+      <trans-unit id="b886dbde84e9e01c33acd54b72d1d299" resname="app.form.type.posttype.title.label">
+        <source>app.form.type.posttype.title.label</source>
+        <target>Заголовок</target>
+      </trans-unit>
+      <trans-unit id="9bee2f27ae29c573c000ef9337cbf312" resname="app.form.type.posttype.content.label">
+        <source>app.form.type.posttype.content.label</source>
+        <target>Содержание</target>
+      </trans-unit>
+      <trans-unit id="df3532851e350c24f80e6aff3f587e86" resname="app.form.type.posttype.slug.label">
+        <source>app.form.type.posttype.slug.label</source>
+        <target>Slug</target>
+      </trans-unit>
+      <trans-unit id="8d4e42ff0b6176033aa89d5b1dd926ce" resname="app.form.type.posttype.created_at.label">
+        <source>app.form.type.posttype.created_at.label</source>
+        <target>Дата создания</target>
+      </trans-unit>
+      <trans-unit id="6f5df334bf0720ffa8f91b342440e54c" resname="app.form.type.posttype.meta_title.label">
+        <source>app.form.type.posttype.meta_title.label</source>
+        <target>Мета: заголовок</target>
+      </trans-unit>
+      <trans-unit id="ab5affde0627615fb973f26fad51d3e1" resname="app.form.type.posttype.meta_keywords.label">
+        <source>app.form.type.posttype.meta_keywords.label</source>
+        <target>Мета: ключевые слова</target>
+      </trans-unit>
+      <trans-unit id="ae2b255def8672d751103d08a0afa337" resname="app.form.type.posttype.meta_description.label">
+        <source>app.form.type.posttype.meta_description.label</source>
+        <target>Мета: описание</target>
+      </trans-unit>
+      <trans-unit id="df26b4621fc2b7eb78991014eeff198c" resname="app.form.type.posttype.save.label">
+        <source>app.form.type.posttype.save.label</source>
+        <target>Сохранить</target>
+      </trans-unit>
+      <trans-unit id="158ff7225491c6db636014d0748f2c7c" resname="controllers.admin.post.edit.success">
+        <source>controllers.admin.post.edit.success</source>
+        <target>Измненения сохранены</target>
+      </trans-unit>
+      <trans-unit id="2948efec0e4f962b87ea6abcdb02f461" resname="controllers.admin.post.new.success">
+        <source>controllers.admin.post.new.success</source>
+        <target>Новая запись создана</target>
+      </trans-unit>
+      <trans-unit id="966da7a0e51dc60d3f6e1c6c33ef9a5c" resname="controllers.admin.post.delete.success">
+        <source>controllers.admin.post.delete.success</source>
+        <target>Запись удалена</target>
+      </trans-unit>
+      <trans-unit id="99c7a405d59dbc70dbaef139345eca5d" resname="controllers.admin.post.delete.error">
+        <source>controllers.admin.post.delete.error</source>
+        <target>Запись не найдена</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

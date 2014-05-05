@@ -1,0 +1,46 @@
+{% extends 'admin/layout.html.twig' %}
+
+{% block header %}
+    <div class="page-header">
+        <h1>{{ 'views.admin.post.index.page_heading'|trans }}</h1>
+        <div class="controls">
+            <a href="{{ path('admin_post_new') }}" type="button" class="btn btn-default">
+                <span class="glyphicon glyphicon-plus"></span> {{ 'views.admin.post.index.button.create'|trans }}
+            </a>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <table class="table table-hover table-condensed">
+        <thead>
+            <tr>
+                <th>{{ 'views.admin.post.index.post.created_at'|trans }}</th>
+                <th>{{ 'views.admin.post.index.post.title'|trans }}</th>
+                <th>&nbsp;</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for post in posts %}
+                <tr>
+                    <td>{{ post.created_at|date('d.m.Y') }}</td>
+                    <td>{{ post.title }}</td>
+                    <td class="text-right list-actions">
+                        <a type="button" class="btn btn-default btn-xs" href="{{ path('admin_post_edit', {'id': post.id}) }}" title="{{ 'views.admin._list.button.edit'|trans }}">
+                            <span class="glyphicon glyphicon-edit"></span> {{ 'views.admin._list.button.edit'|trans }}
+                        </a>
+                        <a type="button" class="btn btn-danger btn-xs" href="{{ path('admin_post_delete', {'id': post.id}) }}" data-confirmation="{{ 'views.admin._list.button.delete_confirmation'|trans }}" title="{{ 'views.admin._list.button.delete'|trans }}">
+                            <span class="glyphicon glyphicon-remove"></span> {{ 'views.admin._list.button.delete'|trans }}
+                        </a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    {% include 'admin/shared/pagination.html.twig' with {
+        'current': currentPage, 
+        'path': 'admin_post_index',
+        'pages': pagination.countPages
+    } %}
+{% endblock %}

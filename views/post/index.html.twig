@@ -1,0 +1,27 @@
+{% extends 'layout.html.twig' %}
+
+{% set current_page = 'homepage' %}
+
+{% block header %}
+    <div class="page-header">
+        <h1>{{ 'views.post.index.title'|trans }}</h1>
+    </div> 
+{% endblock %}
+
+{% block content %}
+    <ul class="posts-list">
+        {% for post in posts %}
+            <li>
+                <span class="post-date">{{ post.created_at|date('d.m.Y') }}</span>
+                <a href="{{ path('post_show', {slug: post.slug}) }}">{{ post.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+    {% include 'shared/pagination.html.twig' with {
+        'current': currentPage, 
+        'path': 'post_index',
+        'pages': pagination.countPages
+    } %}
+
+{% endblock %}
