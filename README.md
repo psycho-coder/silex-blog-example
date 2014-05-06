@@ -23,6 +23,7 @@ Admin section available at _/admin_ URL.
 - [PHP Markdown](http://michelf.ca/projects/php-markdown/) editor (with [Extra](http://michelf.ca/projects/php-markdown/extra/) extension) for posts content
 - Friendly URL generating with [Cocur\Slugify](https://github.com/cocur/slugify)
 - Syntax highlighting with [highlight.js](http://highlightjs.org)
+- I18n ready
 
 ## Prod and Dev
 
@@ -34,10 +35,10 @@ To run the blog in the development environment use *index_dev.php*. Like this: *
 
 ## Console commands
 
-1. `db:create`. Creates a database.
-2. `db:create-user`. Creates a user with access to admin section. Requires two arguments: username and password.
-3. `translations:extract`. Extracts untranslated messages from views.
-4. `translations:add-unit`. Adds a translation unit. Requires two arguments: source message and translation.
-5. `faker:populate:posts`. Generates fake posts (for testing).
+- `db:create`. Creates a database.
+- `db:create-user`. Creates a user with access to admin section. Requires two arguments: username and password.
+- `translations:extract`. Extracts untranslated messages from views.
+- `translations:add-unit`. Adds a translation unit. Requires two arguments: source message and translation.
+- `faker:populate:posts`. Generates fake posts (for testing).
 
 Add `--help` option to see more information about command.
