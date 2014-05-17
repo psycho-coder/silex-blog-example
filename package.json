@@ -1,5 +1,4 @@
 {
-  "name": "silentvick/silex-blog-example",
   "devDependencies": {
     "grunt": "~0.4.2",
     "load-grunt-tasks": "~0.3.0",
